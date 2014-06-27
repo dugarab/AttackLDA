@@ -1,0 +1,80 @@
+synthetic data:
+nohup attacklda est 0.1 10 settings.txt  ../synthetic.data random ../testrunSyn2/ 1000 5 10 0.01 ../synvocab > debug4 &
+
+bayesian.cs.wisc.edu   
+ congress data
+  Vari add "marijuana" Attack
+   nohup attacklda est 0.1 10 ../settings/CongressSettings.txt  ../datasets/congress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResCongress1.txt 4357 variational &
+   nohup attacklda est 0.1 10 ../settings/CongressSettings.txt  ../datasets/congress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResCongress2.txt 4361 variational &
+   nohup attacklda est 0.1 10 ../settings/CongressSettings.txt  ../datasets/congress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResCongress3.txt 4373 variational &
+   nohup attacklda est 0.1 10 ../settings/CongressSettings.txt  ../datasets/congress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResCongress4.txt 4389 variational &
+   nohup attacklda est 0.1 10 ../settings/CongressSettings.txt  ../datasets/congress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResCongress5.txt 4377 variational &
+
+   Random add 'marijuana' Attack
+   nohup attacklda est 0.1 10 ../settings/CongressSettings.txt  ../datasets/congress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResRandomCongress1.txt 4357 random ../RandomSettings/ResCongressResCongress1.txtsetting &
+   nohup attacklda est 0.1 10 ../settings/CongressSettings.txt  ../datasets/congress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResRandomCongress2.txt 4361 random ../RandomSettings/ResCongressResCongress2.txtsetting &
+   nohup attacklda est 0.1 10 ../settings/CongressSettings.txt  ../datasets/congress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResRandomCongress3.txt 4373 random ../RandomSettings/ResCongressResCongress3.txtsetting &
+   nohup attacklda est 0.1 10 ../settings/CongressSettings.txt  ../datasets/congress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResRandomCongress4.txt 4389 random ../RandomSettings/ResCongressResCongress4.txtsetting &
+   nohup attacklda est 0.1 10 ../settings/CongressSettings.txt  ../datasets/congress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResRandomCongress5.txt 4377 random ../RandomSettings/ResCongressResCongress5.txtsetting &
+
+   
+   
+gamehendge.cs.wisc.edu:   
+   Vari delete "iraq" Attack
+   nohup attacklda est 0.1 10 ../settings/DeleteCongressSettings.txt  ../datasets/congress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResDeleteCongress1.txt 5363 variational &
+   nohup attacklda est 0.1 10 ../settings/DeleteCongressSettings.txt  ../datasets/congress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResDeleteCongress2.txt 4375 variational &
+   nohup attacklda est 0.1 10 ../settings/DeleteCongressSettings.txt  ../datasets/congress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResDeleteCongress3.txt 5373 variational &
+	nohup attacklda est 0.1 10 ../settings/DeleteCongressSettings.txt  ../datasets/congress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResDeleteCongress4.txt 5383 variational &
+	
+   Random delete "iraq" Attack
+   nohup attacklda est 0.1 10 ../settings/DeleteCongressSettings.txt  ../datasets/congress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResRandomDeleteCongress2.txt 4375 random ../RandomSettings/ResDeleteCongressResDeleteCongress2.txtsetting &
+   nohup attacklda est 0.1 10 ../settings/DeleteCongressSettings.txt  ../datasets/congress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResRandomDeleteCongress1.txt 5363 random ../RandomSettings/ResDeleteCongressResDeleteCongress1.txtsetting &
+   nohup attacklda est 0.1 10 ../settings/DeleteCongressSettings.txt  ../datasets/congress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResRandomDeleteCongress3.txt 5373 random ../RandomSettings/ResDeleteCongressResDeleteCongress3.txtsetting &
+	nohup attacklda est 0.1 10 ../settings/DeleteCongressSettings.txt  ../datasets/congress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResRandomDeleteCongress4.txt 5383 random ../RandomSettings/ResDeleteCongressResDeleteCongress4.txtsetting &
+	
+AP data
+  Vari Add "debt ceiling" Attack  
+   nohup attacklda est 0.1 15 ../settings/ApSettings.txt ../datasets/ap.data random ../testrunAP/ 0.01 ../datasets/ap.vocab ResAp1.txt 4357 variational &
+   nohup attacklda est 0.1 15 ../settings/ApSettings.txt ../datasets/ap.data random ../testrunAP/ 0.01 ../datasets/ap.vocab ResAp2.txt 4359 variational &
+   nohup attacklda est 0.1 15 ../settings/ApSettings.txt ../datasets/ap.data random ../testrunAP/ 0.01 ../datasets/ap.vocab ResAp3.txt 4361 variational &
+   nohup attacklda est 0.1 15 ../settings/ApSettings.txt ../datasets/ap.data random ../testrunAP/ 0.01 ../datasets/ap.vocab ResAp4.txt 4363 variational &
+   nohup attacklda est 0.1 15 ../settings/ApSettings.txt ../datasets/ap.data random ../testrunAP/ 0.01 ../datasets/ap.vocab ResAp5.txt 4365 variational &
+
+Tiramisu.cs.wisc.edu 
+   nohup attacklda est 0.1 15 ../settings/ApSettings.txt ../datasets/ap.data random ../testrunAP/ 0.01 ../datasets/ap.vocab ResRandomAp1.txt 4357 random ../RandomSettings/ResApResAp1.txtsetting &
+   nohup attacklda est 0.1 15 ../settings/ApSettings.txt ../datasets/ap.data random ../testrunAP/ 0.01 ../datasets/ap.vocab ResRandomAp2.txt 4359 random ../RandomSettings/ResApResAp2.txtsetting &
+   nohup attacklda est 0.1 15 ../settings/ApSettings.txt ../datasets/ap.data random ../testrunAP/ 0.01 ../datasets/ap.vocab ResRandomAp3.txt 4361 random ../RandomSettings/ResApResAp3.txtsetting &
+   nohup attacklda est 0.1 15 ../settings/ApSettings.txt ../datasets/ap.data random ../testrunAP/ 0.01 ../datasets/ap.vocab ResRandomAp4.txt 4363 random ../RandomSettings/ResApResAp4.txtsetting &
+   nohup attacklda est 0.1 15 ../settings/ApSettings.txt ../datasets/ap.data random ../testrunAP/ 0.01 ../datasets/ap.vocab ResRandomAp5.txt 4365 random ../RandomSettings/ResApResAp5.txtsetting &
+
+trilobite.cs.wisc.edu
+  Vari Replace "ron paul" with "ron weasley" Attack
+nohup attacklda est 0.1 12 ../settings/ReplaceWishesSettings.txt  ../datasets/wishes.data random ../testrunWishes/ 0.1 ../datasets/wishes.vocab ResReplaceWishes1.txt 4357 variational &
+nohup attacklda est 0.1 12 ../settings/ReplaceWishesSettings.txt  ../datasets/wishes.data random ../testrunWishes/ 0.1 ../datasets/wishes.vocab ResReplaceWishes2.txt 4361 variational &
+nohup attacklda est 0.1 12 ../settings/ReplaceWishesSettings.txt  ../datasets/wishes.data random ../testrunWishes/ 0.1 ../datasets/wishes.vocab ResReplaceWishes3.txt 4373 variational &
+nohup attacklda est 0.1 12 ../settings/ReplaceWishesSettings.txt  ../datasets/wishes.data random ../testrunWishes/ 0.1 ../datasets/wishes.vocab ResReplaceWishes4.txt 4375 variational &	
+nohup attacklda est 0.1 12 ../settings/ReplaceWishesSettings.txt  ../datasets/wishes.data random ../testrunWishes/ 0.1 ../datasets/wishes.vocab ResReplaceWishes5.txt 4377 variational &
+   
+  Random Replace "ron paul" with "ron weasley" Attack
+nohup attacklda est 0.1 12 ../settings/ReplaceWishesSettings.txt  ../datasets/wishes.data random ../testrunWishes/ 0.1 ../datasets/wishes.vocab ResRandomReplaceWishes1.txt 4357 random ../RandomSettings/ResReplaceWishesResReplaceWishes1.txtsetting &
+nohup attacklda est 0.1 12 ../settings/ReplaceWishesSettings.txt  ../datasets/wishes.data random ../testrunWishes/ 0.1 ../datasets/wishes.vocab ResRandomReplaceWishes2.txt 4361 random ../RandomSettings/ResReplaceWishesResReplaceWishes2.txtsetting &
+nohup attacklda est 0.1 12 ../settings/ReplaceWishesSettings.txt  ../datasets/wishes.data random ../testrunWishes/ 0.1 ../datasets/wishes.vocab ResRandomReplaceWishes3.txt 4373 random ../RandomSettings/ResReplaceWishesResReplaceWishes3.txtsetting &
+nohup attacklda est 0.1 12 ../settings/ReplaceWishesSettings.txt  ../datasets/wishes.data random ../testrunWishes/ 0.1 ../datasets/wishes.vocab ResRandomReplaceWishes4.txt 4375 random ../RandomSettings/ResReplaceWishesResReplaceWishes4.txtsetting &
+nohup attacklda est 0.1 12 ../settings/ReplaceWishesSettings.txt  ../datasets/wishes.data random ../testrunWishes/ 0.1 ../datasets/wishes.vocab ResRandomReplaceWishes5.txt 4377 random ../RandomSettings/ResReplaceWishesResReplaceWishes5.txtsetting &
+      
+   SMALL data (vari)
+nohup attacklda est 0.1 12 ../settings/WishesSettings.txt  ../datasets/wishes_small.data random ../testrunWishes/ 0.1 ../datasets/wishes_small.vocab ResWishesSmall.txt 4357 variational &
+
+Random   
+nohup attacklda est 0.1 12 ../settings/WishesSettings.txt  ../datasets/wishes_small.data random ../testrunWishes/ 0.1 ../datasets/wishes_small.vocab 
+ResWishesSmall.txt 4357 random &
+   
+ POS tagged congress data
+  Vari replace with "marijuana" Attack
+   nohup attacklda est 0.1 10 ../settings/PosAttCongressSettings.txt  ../datasets/postagcongress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResPOSReplaceCongress1.txt 4357 variational &
+   nohup attacklda est 0.1 10 ../settings/PosAttCongressSettings.txt  ../datasets/postagcongress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResPOSReplaceCongress2.txt 4361 variational &
+   nohup attacklda est 0.1 10 ../settings/PosAttCongressSettings.txt  ../datasets/postagcongress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResPOSReplaceCongress3.txt 4373 variational &
+   nohup attacklda est 0.1 10 ../settings/PosAttCongressSettings.txt  ../datasets/postagcongress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResPOSReplaceCongress4.txt 4389 variational &
+   nohup attacklda est 0.1 10 ../settings/PosAttCongressSettings.txt  ../datasets/postagcongress.data random ../testrunCONG/ 0.01 ../datasets/congress.vocab ResPOSReplaceCongress5.txt 4377 variational &
+   
+   
